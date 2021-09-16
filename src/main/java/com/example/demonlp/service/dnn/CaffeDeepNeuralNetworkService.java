@@ -1,4 +1,4 @@
-package com.example.demonlp.service;
+package com.example.demonlp.service.dnn;
 
 import com.example.demonlp.model.DnnObject;
 import com.example.demonlp.service.utils.ImageUtils;
@@ -28,8 +28,8 @@ import java.util.Map;
 public class CaffeDeepNeuralNetworkService
 {
     private Net net;
-    private final String CAFFE_PROTO = "src/main/resources/dnn/MobileNetSSD_deploy.prototxt";
-    private final String CAFFE_MODEL = "src/main/resources/dnn/MobileNetSSD_deploy.caffemodel";
+    private final String CAFFE_PROTO = "src/main/resources/data/dnn/MobileNetSSD_deploy.prototxt";
+    private final String CAFFE_MODEL = "src/main/resources/data/dnn/MobileNetSSD_deploy.caffemodel";
 
     //https://github.com/theAIGuysCode/yolov4-deepsort/blob/master/data/classes/voc.names
     private final String[] classNames = {"background",

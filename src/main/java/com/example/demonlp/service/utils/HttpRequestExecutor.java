@@ -1,4 +1,4 @@
-package com.example.demonlp.service;
+package com.example.demonlp.service.utils;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

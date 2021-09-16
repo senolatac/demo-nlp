@@ -1,4 +1,4 @@
-package com.example.demonlp.service;
+package com.example.demonlp.service.ocr;
 
 import com.example.demonlp.service.utils.ImageUtils;
 import lombok.RequiredArgsConstructor;

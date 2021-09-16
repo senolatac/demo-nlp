@@ -1,4 +1,4 @@
-package com.example.demonlp.service;
+package com.example.demonlp.service.dnn;
 
 import com.example.demonlp.model.DnnObject;
 import com.example.demonlp.service.utils.ImageUtils;
@@ -36,9 +36,9 @@ public class YoloDNNService
     private final List<String> classNames;
 
     public YoloDNNService(ImageUtils imageUtils,
-                          @Value("classpath:dnn/yolov4.cfg") Resource YOLO_MODEL_CFG_R,
-                          @Value("classpath:dnn/yolov4.weights") Resource YOLO_WEIGHTS_R,
-                          @Value("classpath:dnn/coco.names") Resource YOLO_NAMES_R) throws IOException
+                          @Value("classpath:data/dnn/yolov4.cfg") Resource YOLO_MODEL_CFG_R,
+                          @Value("classpath:data/dnn/yolov4.weights") Resource YOLO_WEIGHTS_R,
+                          @Value("classpath:data/dnn/coco.names") Resource YOLO_NAMES_R) throws IOException
     {
         this.net = Dnn.readNetFromDarknet(YOLO_MODEL_CFG_R.getFile().getAbsolutePath(), YOLO_WEIGHTS_R.getFile().getAbsolutePath());
         classNames = Files.readAllLines(Paths.get(YOLO_NAMES_R.getFile().getAbsolutePath()));

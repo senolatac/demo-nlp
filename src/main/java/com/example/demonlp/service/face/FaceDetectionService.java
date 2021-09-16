@@ -1,4 +1,4 @@
-package com.example.demonlp.service;
+package com.example.demonlp.service.face;
 
 import com.example.demonlp.model.DnnObject;
 import com.example.demonlp.service.utils.ImageUtils;
@@ -25,7 +25,7 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class FaceDetectionService
 {
-    private static final CascadeClassifier classifier = new CascadeClassifier("src/main/resources/face/lbpcascade_frontalface.xml");
+    private static final CascadeClassifier classifier = new CascadeClassifier("src/main/resources/data/face/lbpcascade_frontalface.xml");
 
     private final ImageUtils imageUtils;
 

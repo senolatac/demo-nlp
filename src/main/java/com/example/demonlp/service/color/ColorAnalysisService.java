@@ -1,4 +1,4 @@
-package com.example.demonlp.service;
+package com.example.demonlp.service.color;
 
 import com.example.demonlp.model.ImageColor;
 import com.example.demonlp.service.utils.ImageUtils;

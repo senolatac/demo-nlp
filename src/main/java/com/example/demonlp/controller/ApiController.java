@@ -1,6 +1,10 @@
 package com.example.demonlp.controller;
 
-import com.example.demonlp.service.*;
+import com.example.demonlp.service.color.ColorAnalysisService;
+import com.example.demonlp.service.dnn.CaffeDeepNeuralNetworkService;
+import com.example.demonlp.service.dnn.YoloDeepNeuralNetworkService;
+import com.example.demonlp.service.face.FaceDetectionService;
+import com.example.demonlp.service.ocr.TextAnalysisService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

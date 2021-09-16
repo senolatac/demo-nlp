@@ -33,7 +33,7 @@ public class DemoNlpApplication
     public Tesseract getTesseract() throws IOException
     {
         Tesseract instance = new Tesseract();
-        instance.setDatapath("src/main/resources/data/");
+        instance.setDatapath("src/main/resources/data/ocr/");
         instance.setLanguage("eng");
         return instance;
     }

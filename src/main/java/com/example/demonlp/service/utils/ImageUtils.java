@@ -1,7 +1,6 @@
 package com.example.demonlp.service.utils;
 
 import com.example.demonlp.model.DnnObject;
-import com.example.demonlp.service.HttpRequestExecutor;
 import lombok.RequiredArgsConstructor;
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
