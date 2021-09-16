@@ -2,14 +2,14 @@
 #### Object Detection, Face Detection, Color Analysis, Text Extraction
 
 ### Pre-Requirements
-####Install Tesseract for OCR
+#### Install Tesseract for OCR
 ```
 //To use OCR text-detection system, you should install:
 brew install tesseract
 brew install tesseract-lang
 //More Detail: https://www.baeldung.com/java-ocr-tesseract
 ```
-####Install OpenCV
+#### Install OpenCV
 ```
 xcode-select --install
 brew install ant
